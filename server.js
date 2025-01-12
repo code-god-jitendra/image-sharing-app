@@ -40,7 +40,7 @@ app.post("/upload", upload.single("poster-upload"), (req, res) => {
     }
 
     // Generate a shareable link for the uploaded file
-    const fileUrl = `https://image-sharing-app.onrender.com/uploads/${req.file.filename}`;
+    const fileUrl = `https://image-sharing-app-qudh.onrender.com/uploads/${req.file.filename}`;
     res.json({ url: fileUrl });
 });
 

@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         try {
             // Make the POST request to the server
-            const response = await fetch("https://image-sharing-app.onrender.com/upload", {
+            const response = await fetch("https://image-sharing-app-qudh.onrender.com/upload", {
                 method: "POST",
                 body: formData,
             });

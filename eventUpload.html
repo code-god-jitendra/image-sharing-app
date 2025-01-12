@@ -1,0 +1,62 @@
+git <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Poster</title>
+  <link rel="stylesheet" href="eventUpload.css">
+  <script src="event.js"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- Header -->
+  <header class="w-full bg-white shadow p-4 flex items-center justify-between">
+    <h1 class="text-lg font-bold text-blue-600">Upload Poster</h1>
+    <nav>
+      <a href="event.html" class="text-gray-700 hover:text-blue-600">Home</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container p-4">
+    <!-- Upload Section -->
+    <section class="bg-white p-6 rounded-lg shadow mt-4">
+      <h2 class="text-2xl font-bold text-blue-600">Upload Your Poster</h2>
+      <p class="text-gray-700 mt-2">Select a poster image to upload and choose a deadline.</p>
+
+      <!-- File Upload Form -->
+      <form id="upload-form" autocomplete="off" class="mt-4">
+        <input type="file" id="poster-upload" name="poster-upload" accept="image/*"
+          class="block w-full p-2 border rounded-lg mb-4" required>
+
+        <!-- Deadline Dropdown -->
+        <label for="deadline" class="block text-gray-700 font-medium mb-2">Select Deadline</label>
+        <select id="deadline" name="deadline" class="block w-full p-2 border rounded-lg mb-4" required>
+          <option value="1d">1 Day</option>
+          <option value="1w">1 Week</option>
+          <option value="1m">1 Month</option>
+        </select>
+
+        <button type="submit" id="upload-button"
+          class="px-4 py-2 bg-blue-600 text-white rounded-lg shadow">Upload</button>
+      </form>
+
+      <!-- Result Container to Display Uploaded Link -->
+      <div id="result-container" class="mt-4"></div>
+      <div id="result-container" class="mt-4">
+        <!-- Uploaded link and copy button will be dynamically added here -->
+    </div>
+    
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-100 text-center py-4 mt-4">
+    <p>&copy; 2025 Event Poster Creator. All Rights Reserved.</p>
+  </footer>
+
+</body>
+
+</html>

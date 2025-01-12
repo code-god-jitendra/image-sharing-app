@@ -1,0 +1,267 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif; /* Add 'Inter' or fallback fonts */
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f9fafb;
+    color: #111827;
+  }
+  
+  /* Utility Classes */
+  .hidden {
+    display: none;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .justify-between {
+    justify-content: space-between;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+  
+  .bg-white {
+    background-color: white;
+  }
+  
+  .bg-gray-50 {
+    background-color: #f9fafb;
+  }
+  
+  .text-gray-700 {
+    color: #374151;
+  }
+  
+  .text-gray-900 {
+    color: #111827;
+  }
+  
+  .text-blue-600 {
+    color: #2563eb;
+  }
+  
+  .text-lg {
+    font-size: 1.125rem;
+  }
+  
+  .text-2xl {
+    font-size: 1.5rem;
+  }
+  
+  .font-bold {
+    font-weight: 700;
+  }
+  
+  .gap-4 {
+    gap: 1rem;
+  }
+  
+  .p-4 {
+    padding: 1rem;
+  }
+  
+  .p-6 {
+    padding: 1.5rem;
+  }
+  
+  .py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .mt-4 {
+    margin-top: 1rem;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .w-full {
+    width: 100%;
+  }
+  
+  .block {
+    display: block;
+  }
+  
+  /* Header */
+  header {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #2563eb;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    color: #374151;
+  }
+  
+  header nav a:hover {
+    color: #2563eb;
+  }
+  
+  /* Upload Section */
+  section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  section h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2563eb;
+  }
+  
+  section p {
+    color: #374151;
+    margin-top: 0.5rem;
+  }
+  
+  input[type="file"] {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ddd;
+    margin-bottom: 1.5rem;
+    background-color: #f3f4f6;
+  }
+  
+  select {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ddd;
+    margin-bottom: 1.5rem;
+    background-color: #f3f4f6;
+  }
+  
+  button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: none;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Upload Button */
+  #upload-button {
+    background-color: #e5e7eb;
+    color: #374151;
+  }
+  
+  #upload-button:hover {
+    background-color: #2563eb;
+    color: #ffffff
+  }
+  
+  /* Post-Upload Options */
+  #post-upload-options button {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+  
+  #publish-button {
+    background-color: #10b981;
+    color: white;
+  }
+  
+  #publish-button:hover {
+    background-color: #059669;
+  }
+  
+  #new-poster-button {
+    background-color: #ef4444;
+    color: white;
+  }
+  
+  #new-poster-button:hover {
+    background-color: #dc2626;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #1f2937;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header h1 {
+        font-size: 1rem;
+    }
+  
+    section {
+        padding: 1.5rem;
+    }
+  
+    input[type="file"] {
+        padding: 0.75rem;
+    }
+  
+    button {
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem;
+    }
+  }
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1; /* Allows the main content to stretch and push the footer down */
+  }
+  
+  footer {
+    background-color: #1f2937;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
